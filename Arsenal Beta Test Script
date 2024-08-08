@@ -1,12 +1,11 @@
--- Gui to Lua
--- Version: 3.2
--- Script made by shadow, the Owner of the server Galaxy Scripts
--- Discord Invite Link: https://discord.gg/Y5XpdBNvcF
 
 print 'Script made by shadow, the Owner of the server Galaxy Scripts'
 print 'Discord Invite Link: https://discord.gg/Y5XpdBNvcF'
 print 'If there is someone telling everyone that this script is made by him well is a little skidder who dont know how code a script or create one'
 print 'version of the script V0.4'
+
+-- Gui to Lua
+-- Version: 3.2
 
 -- Instances:
 
@@ -21,13 +20,13 @@ local VisualScripts = Instance.new("Frame")
 local SpeedShotButton = Instance.new("TextButton")
 local SilentAimbutton = Instance.new("TextButton")
 local InfAmmo = Instance.new("TextButton")
-local EspEnableButton = Instance.new("TextButton")
+local EspEnable = Instance.new("TextButton")
 local Soon2 = Instance.new("TextButton")
 local Soon3 = Instance.new("TextButton")
 local Soon4 = Instance.new("TextButton")
 local Soon5 = Instance.new("TextButton")
 local lineadivisione = Instance.new("TextLabel")
-local espenable = Instance.new("TextLabel")
+local EspText = Instance.new("TextLabel")
 local soon2 = Instance.new("TextLabel")
 local soon3 = Instance.new("TextLabel")
 local soon4 = Instance.new("TextLabel")
@@ -127,18 +126,18 @@ InfAmmo.Text = "Click"
 InfAmmo.TextColor3 = Color3.fromRGB(255, 255, 255)
 InfAmmo.TextSize = 14.000
 
-EspEnableButton.Name = "EspEnableButton"
-EspEnableButton.Parent = VisualScripts
-EspEnableButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-EspEnableButton.BackgroundTransparency = 0.870
-EspEnableButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-EspEnableButton.BorderSizePixel = 0
-EspEnableButton.Position = UDim2.new(0.284253627, 0, 0.231901139, 0)
-EspEnableButton.Size = UDim2.new(0, 55, 0, 21)
-EspEnableButton.Font = Enum.Font.SourceSansBold
-EspEnableButton.Text = "Click"
-EspEnableButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-EspEnableButton.TextSize = 14.000
+EspEnable.Name = "EspEnable"
+EspEnable.Parent = VisualScripts
+EspEnable.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+EspEnable.BackgroundTransparency = 0.870
+EspEnable.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EspEnable.BorderSizePixel = 0
+EspEnable.Position = UDim2.new(0.284253627, 0, 0.231901139, 0)
+EspEnable.Size = UDim2.new(0, 55, 0, 21)
+EspEnable.Font = Enum.Font.SourceSansBold
+EspEnable.Text = "Click"
+EspEnable.TextColor3 = Color3.fromRGB(255, 255, 255)
+EspEnable.TextSize = 14.000
 
 Soon2.Name = "Soon... 2"
 Soon2.Parent = VisualScripts
@@ -207,18 +206,18 @@ lineadivisione.TextScaled = true
 lineadivisione.TextSize = 100.000
 lineadivisione.TextWrapped = true
 
-espenable.Name = "esp enable"
-espenable.Parent = VisualScripts
-espenable.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-espenable.BackgroundTransparency = 1.000
-espenable.BorderColor3 = Color3.fromRGB(0, 0, 0)
-espenable.BorderSizePixel = 0
-espenable.Position = UDim2.new(-0.115868978, 0, 0.231901139, 0)
-espenable.Size = UDim2.new(0, 182, 0, 21)
-espenable.Font = Enum.Font.SourceSansBold
-espenable.Text = "EspEnable"
-espenable.TextColor3 = Color3.fromRGB(255, 255, 255)
-espenable.TextSize = 17.000
+EspText.Name = "EspText"
+EspText.Parent = VisualScripts
+EspText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EspText.BackgroundTransparency = 1.000
+EspText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EspText.BorderSizePixel = 0
+EspText.Position = UDim2.new(-0.115868978, 0, 0.231901139, 0)
+EspText.Size = UDim2.new(0, 182, 0, 21)
+EspText.Font = Enum.Font.SourceSansBold
+EspText.Text = "EspEnable"
+EspText.TextColor3 = Color3.fromRGB(255, 255, 255)
+EspText.TextSize = 17.000
 
 soon2.Name = "soon... 2"
 soon2.Parent = VisualScripts
@@ -371,7 +370,7 @@ InfoOption.TextSize = 21.000
 
 -- Scripts:
 
-local function RZRNDI_fake_script() -- SilentAimbutton.SilentAimScript 
+local function LZTVNYS_fake_script() -- SilentAimbutton.SilentAimScript 
 	local script = Instance.new('LocalScript', SilentAimbutton)
 
 	-- Script per il TextButton
@@ -421,8 +420,8 @@ local function RZRNDI_fake_script() -- SilentAimbutton.SilentAimScript
 	
 	button.MouseButton1Click:Connect(onButtonClick)
 end
-coroutine.wrap(RZRNDI_fake_script)()
-local function GZAV_fake_script() -- InfAmmo.LocalScript 
+coroutine.wrap(LZTVNYS_fake_script)()
+local function WIFET_fake_script() -- InfAmmo.LocalScript 
 	local script = Instance.new('LocalScript', InfAmmo)
 
 	InfAmmo.MouseButton1Down:connect(function()
@@ -435,72 +434,25 @@ local function GZAV_fake_script() -- InfAmmo.LocalScript
 	end)
 	
 end
-coroutine.wrap(GZAV_fake_script)()
-local function ERZVZKS_fake_script() -- EspEnableButton.LocalScript 
-	local script = Instance.new('LocalScript', EspEnableButton)
+coroutine.wrap(WIFET_fake_script)()
+local function QGSBFUN_fake_script() -- EspEnable.EspEnableScript 
+	local script = Instance.new('LocalScript', EspEnable)
 
-	local Arsenalhaxx = Instance.new("Galactic HUB arsenal script")
-	local MainFrame = Instance.new("Frame")
-	local RGB = Instance.new("Frame")
-	local MainTitle = Instance.new("esp enable")
-	local ESP = Instance.new("EspEnableButton")
+	EspEnable.MouseButton1Down:connect(function()
+		if toggled == false then
+			toggled = true
+			EspEnable.Image = "http://www.roblox.com/asset/?id=1264515756"
+		else do
+				toggled = false
+				EspEnable.Image = "http://www.roblox.com/asset/?id=1264513374"
 	
-	ESP.MouseButton1Click:connect(function()
-		local espEnabled = false
-		local function toggleESP()
-			espEnabled = not espEnabled
-			if espEnabled then
-				createESP()
-			else
-				removeESP()
 			end
 		end
-	
-		ESP.MouseButton1Click:Connect(toggleESP)
-	
-		function createESP()
-			-- Your ESP logic goes here
-		end
-	
-		function removeESP()
-			-- Logic to remove ESP from players
-		end
-	
-		toggleESP()
 	end)
 	
-	function SCRIPT_JZPL83_FAKESCRIPT() -- Xs2.LocalScript 
-		local script = Instance.new('LocalScript')
-		script.Parent = RGB
-		repeat
-			for hue = 0, 1, .01 do
-				script.Parent.Parent.RGB.BackgroundColor3 = Color3.fromHSV(hue, 1, 1)
-				wait(0.3)
-			end
-			for hue = 1, 0 -.01 do
-				script.Parent.Parent.RGB.BackgroundColor3 = Color3.fromHSV(hue, 1, 1)
-				wait(0.3)
-			end
-		until nil
-	
-	end
-	coroutine.resume(coroutine.create(SCRIPT_JZPL83_FAKESCRIPT))
-	
-	game:GetService("StarterGui"):SetCore("SendNotification", {
-		Title = "Galaxy Arsenal Test Script";
-		Text = "Thanks for testing the script";
-		Duration = 15;
-	})
-	wait(2)
-	game:GetService("StarterGui"):SetCore("SendNotification", {
-		Title = "Credits";
-		Text = "Made by Galaxy Owner (Shadow)";
-		Duration = 15;
-	})
-	
 end
-coroutine.wrap(ERZVZKS_fake_script)()
-local function RFJX_fake_script() -- Closed.LocalScript 
+coroutine.wrap(QGSBFUN_fake_script)()
+local function KTPSBUL_fake_script() -- Closed.LocalScript 
 	local script = Instance.new('LocalScript', Closed)
 
 	-- LocalScript inside the TextButton
@@ -537,8 +489,8 @@ local function RFJX_fake_script() -- Closed.LocalScript
 	UserInputService.InputBegan:Connect(onKeyPress)
 	
 end
-coroutine.wrap(RFJX_fake_script)()
-local function GGNELJ_fake_script() -- Frame.drag script 
+coroutine.wrap(KTPSBUL_fake_script)()
+local function FRRFFAN_fake_script() -- Frame.drag script 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -586,8 +538,8 @@ local function GGNELJ_fake_script() -- Frame.drag script
 	end)
 	
 end
-coroutine.wrap(GGNELJ_fake_script)()
-local function PKWNPFQ_fake_script() -- Frame.AlwaysOnTop Script 
+coroutine.wrap(FRRFFAN_fake_script)()
+local function WTWN_fake_script() -- Frame.AlwaysOnTop Script 
 	local script = Instance.new('LocalScript', Frame)
 
 	local ScreenGui = Instance.new("Galactic HUB arsenal script")
@@ -609,8 +561,8 @@ local function PKWNPFQ_fake_script() -- Frame.AlwaysOnTop Script
 	BottomFrame.Parent = ScreenGui
 	
 end
-coroutine.wrap(PKWNPFQ_fake_script)()
-local function LHYRL_fake_script() -- GalaxyScriptArsenal.AlwaysOnTop Script 
+coroutine.wrap(WTWN_fake_script)()
+local function KINF_fake_script() -- GalaxyScriptArsenal.AlwaysOnTop Script 
 	local script = Instance.new('LocalScript', GalaxyScriptArsenal)
 
 	local ScreenGui = Instance.new("Galactic HUB arsenal script")
@@ -632,4 +584,4 @@ local function LHYRL_fake_script() -- GalaxyScriptArsenal.AlwaysOnTop Script
 	BottomFrame.Parent = ScreenGui
 	
 end
-coroutine.wrap(LHYRL_fake_script)()
+coroutine.wrap(KINF_fake_script)()
