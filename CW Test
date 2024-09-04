@@ -1,0 +1,466 @@
+-- Gui to Lua
+-- Version: 3.2
+-- made by shadow
+
+-- Instances:
+
+local CWRework = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local title = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local Credits = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local fov = Instance.new("TextLabel")
+local hitbox = Instance.new("TextLabel")
+local stamina = Instance.new("TextLabel")
+local autoparry = Instance.new("TextLabel")
+local close = Instance.new("TextButton")
+local FovButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local HitBoxButton = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local StaminaButton = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local AutoParryButton = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+
+--Properties:
+
+CWRework.Name = "CW Rework"
+CWRework.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = CWRework
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BackgroundTransparency = 0.230
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.375533015, 0, 0.236789703, 0)
+Frame.Size = UDim2.new(0, 259, 0, 299)
+
+UICorner.CornerRadius = UDim.new(0, 15)
+UICorner.Parent = Frame
+
+title.Name = "title"
+title.Parent = Frame
+title.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+title.BackgroundTransparency = 1.000
+title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+title.BorderSizePixel = 0
+title.Position = UDim2.new(-0.119691119, 0, 0.0133779263, 0)
+title.Size = UDim2.new(0, 244, 0, 26)
+title.Font = Enum.Font.SourceSansBold
+title.Text = "Galactic CW V0.3"
+title.TextColor3 = Color3.fromRGB(252, 255, 255)
+title.TextSize = 25.000
+title.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0, 15)
+UICorner_2.Parent = title
+
+Credits.Name = "Credits"
+Credits.Parent = Frame
+Credits.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Credits.BackgroundTransparency = 1.000
+Credits.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(-0.123127468, 0, 0.1010435, 0)
+Credits.Size = UDim2.new(0, 244, 0, 12)
+Credits.Font = Enum.Font.SourceSansBold
+Credits.Text = "Made by shadow and shhh 🤫"
+Credits.TextColor3 = Color3.fromRGB(252, 255, 255)
+Credits.TextScaled = true
+Credits.TextSize = 13.000
+Credits.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 15)
+UICorner_3.Parent = Credits
+
+fov.Name = "fov"
+fov.Parent = Frame
+fov.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+fov.BackgroundTransparency = 1.000
+fov.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fov.BorderSizePixel = 0
+fov.Position = UDim2.new(-0.142857149, 0, 0.142493621, 0)
+fov.Size = UDim2.new(0, 194, 0, 34)
+fov.Font = Enum.Font.SourceSansBold
+fov.Text = "View Fov"
+fov.TextColor3 = Color3.fromRGB(252, 255, 255)
+fov.TextSize = 17.000
+
+hitbox.Name = "hitbox"
+hitbox.Parent = Frame
+hitbox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+hitbox.BackgroundTransparency = 1.000
+hitbox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+hitbox.BorderSizePixel = 0
+hitbox.Position = UDim2.new(-0.0694980696, 0, 0.259107918, 0)
+hitbox.Size = UDim2.new(0, 194, 0, 34)
+hitbox.Font = Enum.Font.SourceSansBold
+hitbox.Text = "Expand HitBox"
+hitbox.TextColor3 = Color3.fromRGB(252, 255, 255)
+hitbox.TextSize = 17.000
+
+stamina.Name = "stamina"
+stamina.Parent = Frame
+stamina.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+stamina.BackgroundTransparency = 1.000
+stamina.BorderColor3 = Color3.fromRGB(0, 0, 0)
+stamina.BorderSizePixel = 0
+stamina.Position = UDim2.new(-0.0463320464, 0, 0.374122441, 0)
+stamina.Size = UDim2.new(0, 194, 0, 34)
+stamina.Font = Enum.Font.SourceSansBold
+stamina.Text = "Infinite Stamina"
+stamina.TextColor3 = Color3.fromRGB(252, 255, 255)
+stamina.TextSize = 17.000
+
+autoparry.Name = "autoparry"
+autoparry.Parent = Frame
+autoparry.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+autoparry.BackgroundTransparency = 1.000
+autoparry.BorderColor3 = Color3.fromRGB(0, 0, 0)
+autoparry.BorderSizePixel = 0
+autoparry.Position = UDim2.new(-0.119691119, 0, 0.487392247, 0)
+autoparry.Size = UDim2.new(0, 194, 0, 34)
+autoparry.Font = Enum.Font.SourceSansBold
+autoparry.Text = "AutoParry"
+autoparry.TextColor3 = Color3.fromRGB(252, 255, 255)
+autoparry.TextSize = 17.000
+
+close.Name = "close"
+close.Parent = Frame
+close.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+close.BackgroundTransparency = 1.000
+close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+close.BorderSizePixel = 0
+close.Position = UDim2.new(0.799227774, 0, 0, 0)
+close.Size = UDim2.new(0, 58, 0, 42)
+close.Font = Enum.Font.SourceSansBold
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(255, 255, 255)
+close.TextSize = 30.000
+
+FovButton.Name = "Fov Button"
+FovButton.Parent = Frame
+FovButton.BackgroundColor3 = Color3.fromRGB(72, 69, 72)
+FovButton.BackgroundTransparency = 0.600
+FovButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FovButton.BorderSizePixel = 0
+FovButton.Position = UDim2.new(0.606177628, 0, 0.15384616, 0)
+FovButton.Size = UDim2.new(0, 87, 0, 26)
+FovButton.Font = Enum.Font.SourceSansBold
+FovButton.Text = "Activate"
+FovButton.TextColor3 = Color3.fromRGB(252, 255, 255)
+FovButton.TextSize = 14.000
+
+UICorner_4.Parent = FovButton
+
+HitBoxButton.Name = "HitBox Button"
+HitBoxButton.Parent = Frame
+HitBoxButton.BackgroundColor3 = Color3.fromRGB(72, 69, 72)
+HitBoxButton.BackgroundTransparency = 0.600
+HitBoxButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HitBoxButton.BorderSizePixel = 0
+HitBoxButton.Position = UDim2.new(0.606177509, 0, 0.270903021, 0)
+HitBoxButton.Size = UDim2.new(0, 87, 0, 26)
+HitBoxButton.Font = Enum.Font.SourceSansBold
+HitBoxButton.Text = "Activate"
+HitBoxButton.TextColor3 = Color3.fromRGB(252, 255, 255)
+HitBoxButton.TextSize = 14.000
+
+UICorner_5.Parent = HitBoxButton
+
+StaminaButton.Name = "Stamina Button"
+StaminaButton.Parent = Frame
+StaminaButton.BackgroundColor3 = Color3.fromRGB(72, 69, 72)
+StaminaButton.BackgroundTransparency = 0.600
+StaminaButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+StaminaButton.BorderSizePixel = 0
+StaminaButton.Position = UDim2.new(0.606177509, 0, 0.384615391, 0)
+StaminaButton.Size = UDim2.new(0, 87, 0, 26)
+StaminaButton.Font = Enum.Font.SourceSansBold
+StaminaButton.Text = "Activate"
+StaminaButton.TextColor3 = Color3.fromRGB(252, 255, 255)
+StaminaButton.TextSize = 14.000
+
+UICorner_6.Parent = StaminaButton
+
+AutoParryButton.Name = "AutoParry Button"
+AutoParryButton.Parent = Frame
+AutoParryButton.BackgroundColor3 = Color3.fromRGB(72, 69, 72)
+AutoParryButton.BackgroundTransparency = 0.600
+AutoParryButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AutoParryButton.BorderSizePixel = 0
+AutoParryButton.Position = UDim2.new(0.606177509, 0, 0.498327762, 0)
+AutoParryButton.Size = UDim2.new(0, 87, 0, 26)
+AutoParryButton.Font = Enum.Font.SourceSansBold
+AutoParryButton.Text = "Activate"
+AutoParryButton.TextColor3 = Color3.fromRGB(252, 255, 255)
+AutoParryButton.TextSize = 14.000
+
+UICorner_7.Parent = AutoParryButton
+
+-- Scripts:
+
+local function DGBUHTK_fake_script() -- close.close 
+	local script = Instance.new('LocalScript', close)
+
+	-- LocalScript inside the TextButton
+	
+	local button = script.Parent
+	local frame = button.Parent
+	local minimized = false
+	local UserInputService = game:GetService("UserInputService")
+	
+	-- Function to toggle the frame's visibility
+	local function toggleFrame()
+		if not minimized then
+			frame.Visible = false -- Hide the frame
+			minimized = true
+	
+			-- Show notification when frame is hidden
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "How to re-open without executing again?",
+				Text = "Press option on your keyboard to view the UI again",
+				Icon = "" -- You can specify an icon here if needed
+			})
+		else
+			frame.Visible = true -- Show the frame
+			minimized = false
+		end
+	end
+	
+	-- Connect button click to toggleFrame function
+	button.MouseButton1Click:Connect(toggleFrame)
+	
+	-- Function to handle key press
+	local function onKeyPress(input, gameProcessed)
+		if not gameProcessed then
+			if input.KeyCode == Enum.KeyCode.LeftAlt or input.KeyCode == Enum.KeyCode.RightAlt then
+				toggleFrame()
+			end
+		end
+	end
+	
+	-- Connect key press to onKeyPress function
+	UserInputService.InputBegan:Connect(onKeyPress)
+	
+end
+coroutine.wrap(DGBUHTK_fake_script)()
+local function WSOOUNV_fake_script() -- FovButton.Fov Activate 
+	local script = Instance.new('LocalScript', FovButton)
+
+	-- LocalScript inside the Button
+	
+	local button = script.Parent
+	local fov = 100
+	local RunService = game:GetService("RunService")
+	local Cam = game.Workspace.CurrentCamera
+	
+	-- Variables for FOV ring
+	local FOVring = Drawing.new("Circle")
+	FOVring.Visible = false -- Start as invisible
+	FOVring.Thickness = 2
+	FOVring.Color = Color3.fromRGB(128, 0, 128) -- Purple color
+	FOVring.Filled = false
+	FOVring.Radius = fov
+	FOVring.Position = Cam.ViewportSize / 2
+	
+	local function updateDrawings()
+		local camViewportSize = Cam.ViewportSize
+		FOVring.Position = camViewportSize / 2
+	end
+	
+	-- Connect button click to activate the FOV ring
+	button.MouseButton1Click:Connect(function()
+		FOVring.Visible = true -- Make the FOV ring visible
+		RunService.RenderStepped:Connect(updateDrawings) -- Start updating the FOV ring's position
+	end)
+	
+end
+coroutine.wrap(WSOOUNV_fake_script)()
+local function GMIMV_fake_script() -- HitBoxButton.HitBox Activate 
+	local script = Instance.new('LocalScript', HitBoxButton)
+
+	-- LocalScript inside the Button
+	
+	local button = script.Parent
+	
+	-- Variables for the script functionality
+	_G.HeadSize = 14
+	_G.Disabled = true
+	
+	local function activateHeadResize()
+		-- Function that modifies the head size and properties
+		game:GetService('RunService').RenderStepped:Connect(function()
+			if _G.Disabled then
+				for _, player in ipairs(game:GetService('Players'):GetPlayers()) do
+					if player.Name ~= game:GetService('Players').LocalPlayer.Name then
+						pcall(function()
+							local head = player.Character and player.Character:FindFirstChild("Head")
+							if head then
+								head.Size = Vector3.new(_G.HeadSize, _G.HeadSize, _G.HeadSize)
+								head.Transparency = 1
+								head.BrickColor = BrickColor.new("Red")
+								head.Material = "Neon"
+								head.CanCollide = false
+								head.Massless = true
+							end
+						end)
+					end
+				end
+			end
+		end)
+	end
+	
+	-- Connect button click to activate the script
+	button.MouseButton1Click:Connect(function()
+		_G.Disabled = false -- Enable the script when the button is clicked
+		activateHeadResize() -- Start the head resizing functionality
+	end)
+	
+end
+coroutine.wrap(GMIMV_fake_script)()
+local function HGTE_fake_script() -- StaminaButton.Stamina Activate 
+	local script = Instance.new('LocalScript', StaminaButton)
+
+	-- LocalScript inside the Button
+	
+	local button = script.Parent
+	
+	local function activateScript()
+		-- CW | Inf. Stamina & No Jump Cooldown --
+		-- Made by shadow--
+	
+		for i,v in pairs(getgc(true)) do
+			if typeof(v) == "table" and rawget(v, "getIsMaxed") then
+				v.getIsMaxed = function()
+					return false
+				end
+				v.getFlags = function()
+					return 1
+				end
+				v.addFlags = function(a,b)
+					a:setFlags(0)
+					return
+				end
+			end
+			if typeof(v) == "table" and rawget(v, "spawnCharacter") then
+				local oldfunc = v.spawnCharacter
+				v.SpawnCharacter = function(a)
+					for _,f in pairs(getgc(true)) do
+						if typeof(f) == "table" and rawget(f, "getIsMaxed") then
+							f.getIsMaxed = function()
+								return false
+							end
+							f.getFlags = function()
+								return 1
+							end
+							f.addFlags = function(aa,b)
+								aa:setFlags(0)
+								return
+							end
+						end
+					end
+				end
+			end
+			if typeof(v) == "table" and rawget(v, "getCanJump") then
+				v.getCanJump = function()
+					return true
+				end
+			end
+			if typeof(v) == "table" and rawget(v, "JUMP_DELAY_ADD") then
+				v.JUMP_DELAY_ADD = 0.5
+			end
+			if typeof(v) == "table" and rawget(v, "_setStamina") then
+				v._setStamina = function(a, b)
+					a._stamina = math.huge
+					a._staminaChangedSignal:Fire(99)
+				end
+			end
+		end
+	
+		-- Notification to indicate the script has been loaded
+		game.StarterGui:SetCore("SendNotification", {Title = "Galactic CW Infinite stamina + no jump cooldown", Text = "Script loaded, "..game.Players.LocalPlayer.DisplayName..".", Duration = 4,})
+	end
+	
+	-- Connect button click to activate the script
+	button.MouseButton1Click:Connect(function()
+		activateScript()
+	end)
+	
+end
+coroutine.wrap(HGTE_fake_script)()
+local function WMMFVZW_fake_script() -- Frame.drag script 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UserInputService = game:GetService("UserInputService")
+	local TweenService = game:GetService("TweenService")
+	
+	local frame = script.Parent
+	local dragging = true
+	local dragInput, mousePos, framePos
+	
+	local function update(input)
+		local delta = input.Position - mousePos
+		local newPosition = UDim2.new(
+			framePos.X.Scale,
+			framePos.X.Offset + delta.X,
+			framePos.Y.Scale,
+			framePos.Y.Offset + delta.Y
+		)
+		frame.Position = newPosition
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			mousePos = input.Position
+			framePos = frame.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	frame.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if dragging and input == dragInput then
+			update(input)
+		end
+	end)
+	
+end
+coroutine.wrap(WMMFVZW_fake_script)()
+local function YQLT_fake_script() -- CWRework.AlwaysOnTop Script 
+	local script = Instance.new('LocalScript', CWRework)
+
+	local ScreenGui = Instance.new("CW Rework")
+	local TopFrame = Instance.new("Frame")
+	local BottomFrame = Instance.new("Frame")
+	
+	ScreenGui.Parent = game.CoreGui
+	
+	TopFrame.Size = UDim2.new(0, 200, 0, 200)
+	TopFrame.Position = UDim2.new(0.5, -100, 0.5, -100)
+	TopFrame.BackgroundColor3 = Color3.new(1, 0, 0) -- Red color
+	TopFrame.ZIndex = 2 -- Higher ZIndex to be on top
+	TopFrame.Parent = ScreenGui
+	
+	BottomFrame.Size = UDim2.new(0, 200, 0, 200)
+	BottomFrame.Position = UDim2.new(0.5, -100, 0.5, 50)
+	BottomFrame.BackgroundColor3 = Color3.new(0, 0, 1) -- Blue color
+	BottomFrame.ZIndex = 1 -- Lower ZIndex
+	BottomFrame.Parent = ScreenGui
+	
+end
+coroutine.wrap(YQLT_fake_script)()
